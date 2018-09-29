@@ -55,11 +55,6 @@ window.findNRooksSolution = function(n) {
           board[rowIndex][colIndex] = 0;
           rooks--;
         }
-        //if(!found) {
-          
-        //}
-        
-        
       }
     }
   }
@@ -75,9 +70,6 @@ window.countNRooksSolutions = function(n) {
   var solutionCount = undefined; //fixme
 
   let solutionsArr = [];
-  if(n==1) {
-    return [[1]];
-  } 
   let solution;
   let boardObject = new Board({ n : n });
   //We'll make a board that is a nxn matrix
